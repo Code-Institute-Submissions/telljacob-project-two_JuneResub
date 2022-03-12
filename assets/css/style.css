@@ -33,7 +33,7 @@ body {
 
 .heading {
     font-size: 300%;
-    padding-top: 5%;
+    padding-top: 5vh;
 }
 
 /* Top section */
@@ -50,9 +50,9 @@ body {
 }
 
 
-/* Timeline */
+/* Counddown % */
 
-#timer-timeline {
+#timer-percent {
     font-size: 300%;
 }
 
@@ -73,7 +73,7 @@ body {
 
 .input-rounds {
     height: 40px;
-    width: fit-content;
+    width: 75px;
     font-size: medium;
     text-align: center;
 }
@@ -86,7 +86,7 @@ body {
 
 .input-work {
     height: 40px;
-    width: fit-content;
+    width: 75px;
     font-size: large;
     text-align: center;
 }
@@ -99,7 +99,7 @@ body {
 
 .input-rest {
     height: 40px;
-    width: fit-content;
+    width: 75px;
     font-size: medium;
     text-align: center;
 }
