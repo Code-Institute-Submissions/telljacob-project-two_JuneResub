@@ -7,7 +7,7 @@
 
     <!-- Font and fontawesome links -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -17,23 +17,26 @@
     <section id="section-outer">
         <section id="section-top">
             <h1 class="heading">Custom Interval Training</h1>
-            <div id="customization-bars">
-                <div id="rounds">Rounds</div>
-                <div id="work">Work</div>
-                <div id="rest">Rest</div>
+            <div id="timer-round">
+                <h2>Round + *current round*</h2>
             </div>
-            <div id="start-workout">Start Workout</div>
+            <div id="timer-countdown-inner">45</div>
+            <div id="timer-timeline">!-----------------------------------------------------------!</div>
         </section>
 
         <section id="section-bottom">
-            <div id="timer-round">
-                <h1 class="heading"></h1>
+            <div id="customization-bars">
+                <div id="rounds">Number of Rounds: 
+                    <input class="input-rounds" type="number">
+                </div>
+                <div id="work">Round Time: 
+                    <input class="input-work" type="number">
+                </div>
+                <div id="rest">Rest Time: 
+                    <input class="input-rest" type="number">
+                </div>
             </div>
-            <div id="timer-countdown-outer">
-                <i class="fa-solid fa-circle-dashed"></i>
-                <div id="timer-countdown-inner">45</div>
-            </div>
-            <div id="timer-timeline">-------------</div>
+            <button id="start-workout">Start Workout</button>
         </section>
     </section>
     <script src="assets/js/script.js"></script>
