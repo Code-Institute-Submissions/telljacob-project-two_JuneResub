@@ -53,7 +53,7 @@ body {
 /* Counddown % */
 
 #timer-percent {
-    font-size: 300%;
+    font-size: 150%;
 }
 
  /* Custom rounds, work and rest timers */
@@ -63,9 +63,17 @@ body {
     height: 50%;
     font-size: large;
     font-weight: 500;
+    margin-bottom: 50px;
+}
+
+#start-workout, #stop-workout, #reset-workout {
+    width: 150px;
+    height: 75px;
+    font-size: 200%;
 }
 
 #rounds {
+    padding-top: 2em;
     padding-left: 20%;
     float: left;
     width: 20%;
@@ -79,6 +87,7 @@ body {
 }
 
 #work {
+    padding-top: 2em;
     float: left;
     width: 20%;
     font-size: large;
@@ -92,6 +101,7 @@ body {
 }
 
 #rest {
+    padding-top: 2em;
     float: left;
     width: 20%;
     font-size: large;
@@ -102,11 +112,4 @@ body {
     width: 75px;
     font-size: medium;
     text-align: center;
-}
-
-#start-workout {
-    font-size: large;
-    width: 250px;
-    height: 75px;
-    font-size: 200%;
 }
