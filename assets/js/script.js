@@ -34,7 +34,7 @@ function timer() {
             }
         
             let percentTimer = document.getElementById("percentCountdown");
-            percentTimer.innerHTML = Math.round((startcounter/counter)*100);
+            percentTimer.innerHTML = "Session " + Math.round((startcounter/counter)*100) + "% Completed";
         }
     }, 1000);
 }
@@ -43,4 +43,6 @@ function reset() {
     isEnabled = false;
     let resetTimer = document.getElementById("timerCountdown").value;
     resetTimer.innerHTML = "00h:00m:00s";
+    let inputValue = document.getElementById("inputWork").value;
+    inputValue.innerHTML = "00h:00m:00s";
 }
