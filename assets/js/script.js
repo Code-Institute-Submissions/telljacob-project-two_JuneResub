@@ -1,6 +1,6 @@
 
 document.getElementById("startWork").onclick = function() {
-    alert("HELLO SAVE ME FROM")
+    timer()
 }
 
 document.getElementById("stopWork").onclick = function() {
@@ -10,31 +10,34 @@ document.getElementById("stopWork").onclick = function() {
 document.getElementById("resetWork").onclick = function() {
     alert("HELLO SAVE ME FROM HERE")
 }
-document.getElementById("inputWork");
 
-let counter = 360;
-var startcounter = 0;
+// Import value from input
 
-// Fix activate on click
-setInterval( function(){
-    counter--;
-    startcounter++;
 
-    let hours = Math.floor((counter % (60 * 60 * 24)) / (60 * 60));
-    let minutes = Math.floor((counter % (60 * 60)) / (60));
-    let seconds = Math.floor((counter % 60));
+function timer() {
+    const inputValue = document.getElementById("inputWork").value;
+    let counter = inputValue * 60;
+    var startcounter = 0;
+    setInterval( function(){
+        counter--;
+        startcounter++;
 
-    if( counter >= 0 ){
-        id = document.getElementById("timerCountdown");
-        id.innerHTML = hours + "h " + minutes + "m " + seconds + "s ";
-    }
+        let hours = Math.floor((counter % (60 * 60 * 24)) / (60 * 60));
+        let minutes = Math.floor((counter % (60 * 60)) / (60));
+        let seconds = Math.floor((counter % 60));
 
-    if( counter === 1 ){
-        id.innerHTML = "WORK COMPLETE";
-    }
+        if( counter >= 0 ){
+            id = document.getElementById("timerCountdown");
+            id.innerHTML = hours + "h " + minutes + "m " + seconds + "s ";
+        }
 
-    let percentTimer = document.getElementById("percentCountdown");
-    percentTimer.innerHTML = Math.round((startcounter/counter)*100);
+        if( counter === 1 ){
+            id.innerHTML = "WORK COMPLETE";
+        }
 
-}, 1000);
+        let percentTimer = document.getElementById("percentCountdown");
+        percentTimer.innerHTML = Math.round((startcounter/counter)*100);
+
+    }, 1000);
+}
 
