@@ -8,7 +8,9 @@ document.getElementById("stopWork").onclick = function() {
 }
 
 document.getElementById("resetWork").onclick = function() {
-    reset();
+    isEnabled = false;
+    id = document.getElementById("timerCountdown");
+    id.innerHTML = "00h:00m:00s";
 }
 // Import value from input
 function timer() {    
@@ -40,9 +42,9 @@ function timer() {
 }
 
 function reset() {
-    isEnabled = false;
     let resetTimer = document.getElementById("timerCountdown").value;
     resetTimer.innerHTML = "00h:00m:00s";
     let inputValue = document.getElementById("inputWork").value;
     inputValue.innerHTML = "00h:00m:00s";
+    intputWork.innerHTML = "00h:00m:00s";
 }
