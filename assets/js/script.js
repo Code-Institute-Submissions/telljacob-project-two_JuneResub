@@ -1,5 +1,6 @@
+
 document.getElementById("startWork").onclick = function() {
-    alert("HELLO SAVE ME")
+    alert("HELLO SAVE ME FROM")
 }
 
 document.getElementById("stopWork").onclick = function() {
@@ -9,9 +10,9 @@ document.getElementById("stopWork").onclick = function() {
 document.getElementById("resetWork").onclick = function() {
     alert("HELLO SAVE ME FROM HERE")
 }
+document.getElementById("inputWork");
 
-
-let counter = document.getElementById("inputWork");
+let counter = 360;
 var startcounter = 0;
 
 // Fix activate on click
@@ -28,7 +29,7 @@ setInterval( function(){
         id.innerHTML = hours + "h " + minutes + "m " + seconds + "s ";
     }
 
-    if( counter === 0 ){
+    if( counter === 1 ){
         id.innerHTML = "WORK COMPLETE";
     }
 
