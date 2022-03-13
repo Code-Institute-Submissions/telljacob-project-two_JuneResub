@@ -1,22 +1,27 @@
-document.addEventListener("DOMContentLoaded", function() {
-    let buttons = document.getElementsByTagName("button")
+document.getElementById("startWork").onclick = function() {
+    alert("HELLO SAVE ME")
+}
 
-    for (let button of buttons) {
-        button.addEventListener("click", function() {
-            if (this.getAttribute("input-rounds") === "start-workout") {
-                alert("You sent in a message");
-            } else {
+document.getElementById("stopWork").onclick = function() {
+    alert("HELLO SAVE ME")
+}
 
-            }
-        })
-    }
-})
+document.getElementById("resetWork").onclick = function() {
+    alert("HELLO SAVE ME")
+}
+
+document.getElementById
 
 
-let work = document.getElementsByClassName(".inputWork");
+/*
+startWork.addEventListener("click", function() {
+    alert("HELLO SAVE ME")
+}
+
+
 let rest = document.getElementsByClassName(".inputRest");
-
-var counter = 3600;
+*/
+let counter = document.getElementById("inputWork");
 var startcounter = 0;
 
 // Fix activate on click
@@ -26,7 +31,7 @@ setInterval( function(){
 
     let hours = Math.floor((counter % (60 * 60 * 24)) / (60 * 60));
     let minutes = Math.floor((counter % (60 * 60)) / (60));
-    let seconds = Math.floor((counter % (60)));
+    let seconds = Math.floor((counter % 60));
 
     if( counter >= 0 ){
         id = document.getElementById("timerCountdown");

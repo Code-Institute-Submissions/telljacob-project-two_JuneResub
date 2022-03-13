@@ -40,7 +40,7 @@ body {
     margin-top: 20px;
 }
 
-/* Timer percent of total workout*/
+/* Timer percent of total work*/
 #percentCountdown {
     font-size: 200%;
     margin-top: 20px;
@@ -56,30 +56,21 @@ body {
     margin-bottom: 50px;
 }
 
-#startWorkout, #stopWorkout, #resetWorkout {
+#startWork, #stopWork, #resetWork {
     width: 150px;
     height: 75px;
     font-size: 200%;
     background-color:#3a3a3a;
 }
 
-#work {
+#work, #rest {
     text-align: center;
     padding-top: 2em;
-    float: left;
     width: 100%;
     font-size: large;
 }
 
-#rest {
-    text-align: center;
-    padding-top: 2em;
-    float: left;
-    width: 100%;
-    font-size: large;
-}
-
-.inputWork, .inputRest {
+#inputWork {
     height: 40px;
     width: 75px;
     font-size: large;
