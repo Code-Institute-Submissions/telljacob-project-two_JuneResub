@@ -1,4 +1,3 @@
-/*
 document.addEventListener("DOMContentLoaded", function() {
     let buttons = document.getElementsByTagName("button")
 
@@ -12,21 +11,26 @@ document.addEventListener("DOMContentLoaded", function() {
         })
     }
 })
-*/
 
-let rounds = document.getElementsByClassName(".inputRounds");
+
 let work = document.getElementsByClassName(".inputWork");
 let rest = document.getElementsByClassName(".inputRest");
 
-var counter = 120;
-var startcounter = counter;
+var counter = 3600;
+var startcounter = 0;
 
+// Fix activate on click
 setInterval( function(){
     counter--;
+    startcounter++;
+
+    let hours = Math.floor((counter % (60 * 60 * 24)) / (60 * 60));
+    let minutes = Math.floor((counter % (60 * 60)) / (60));
+    let seconds = Math.floor((counter % (60)));
 
     if( counter >= 0 ){
         id = document.getElementById("timerCountdown");
-        id.innerHTML = counter;
+        id.innerHTML = hours + "h " + minutes + "m " + seconds + "s ";
     }
 
     if( counter === 0 ){
@@ -34,6 +38,7 @@ setInterval( function(){
     }
 
     let percentTimer = document.getElementById("percentCountdown");
-    percentTimer.innerHTML = Math.round((startcounter/counter));
+    percentTimer.innerHTML = Math.round((startcounter/counter)*100);
 
 }, 1000);
+
