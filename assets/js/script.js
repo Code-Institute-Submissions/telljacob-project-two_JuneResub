@@ -14,28 +14,26 @@ document.addEventListener("DOMContentLoaded", function() {
 })
 */
 
-// Import input data
-let rounds = document.querySelector("inputRounds");
-let work = document.querySelector("inputWork");
-let rest = document.querySelector("inputRest");
+let rounds = document.getElementsByClassName(".inputRounds");
+let work = document.getElementsByClassName(".inputWork");
+let rest = document.getElementsByClassName(".inputRest");
 
-// Import start, stop and reset buttons
-var start = document.querySelector("startWorkout");
-var stop = document.querySelector("stopWorkout");
-var reset = document.querySelector("resetWorkout");
-
-
-work = inputWork;
+var counter = 120;
+var startcounter = counter;
 
 setInterval( function(){
-    work--;
+    counter--;
 
-    if( work >= 0 ){
-        id = document.getElementById("inputWork");
-        id.innerHTML = work;
+    if( counter >= 0 ){
+        id = document.getElementById("timerCountdown");
+        id.innerHTML = counter;
     }
 
-    if( work === 0 ){
-        id.innerHTML = "WORKOUT COMPLETE";
+    if( counter === 0 ){
+        id.innerHTML = "WORK COMPLETE";
     }
+
+    let percentTimer = document.getElementById("percentCountdown");
+    percentTimer.innerHTML = Math.round((startcounter/counter));
+
 }, 1000);

@@ -6,21 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Font and fontawesome links -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <title>Document</title>
+    <title>Study helper</title>
 </head>
 <body>
     <section id="section-outer">
         <section id="section-top">
-            <h1 class="heading">Interval Training</h1>
+            <h1 class="heading">Study Helper</h1>
             <h2>Customizable Timer</h2>
-            <p id="roundCountdown">0</p>
-            <p id="timerCountdown">00:00</p>
-            <p id="percentCountdown">Workout 0% Completed</p>
+            <p id="roundCountdown"></p>
+            <p id="timerCountdown"></p>
+            <p>Workout <span id="percentCountdown"></span>% Completed</p>
         </section>
 
         <section id="section-bottom">
@@ -29,13 +27,13 @@
             <button id="resetWorkout">Reset</button>
             <div>
                 <div id="rounds">Rounds: 
-                    <input class="inputRounds" type="number" value="2" min="1" max="10">
+                    <input class="inputRounds" type="number" value="0" min="1" max="10">
                 </div>
                 <div id="work">Active: 
-                    <input class="inputWork" type="number" value="60" min="1" max="3600">
+                    <input class="inputWork" type="number" value="5" min="1" max="3600">
                 </div>
                 <div id="rest">Rest: 
-                    <input class="inputRest" type="number" value="5" min="0" max="600">
+                    <input class="inputRest" type="number" value="0" min="0" max="600">
                 </div>
             </div>
         </section>
