@@ -3,24 +3,14 @@ document.getElementById("startWork").onclick = function() {
 }
 
 document.getElementById("stopWork").onclick = function() {
-    alert("HELLO SAVE ME")
+    alert("HELLO SAVE ME FROM")
 }
 
 document.getElementById("resetWork").onclick = function() {
-    alert("HELLO SAVE ME")
-}
-
-document.getElementById
-
-
-/*
-startWork.addEventListener("click", function() {
-    alert("HELLO SAVE ME")
+    alert("HELLO SAVE ME FROM HERE")
 }
 
 
-let rest = document.getElementsByClassName(".inputRest");
-*/
 let counter = document.getElementById("inputWork");
 var startcounter = 0;
 
