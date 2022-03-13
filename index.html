@@ -24,18 +24,18 @@
         </section>
 
         <section id="section-bottom">
-            <button id="start-workout">Start</button>
-            <button id="stop-workout">Stop</button>
-            <button id="reset-workout">Reset</button>
+            <button id="startWorkout">Start</button>
+            <button id="stopWorkout">Stop</button>
+            <button id="resetWorkout">Reset</button>
             <div>
                 <div id="rounds">Rounds: 
-                    <input class="input-rounds" type="number">
+                    <input class="inputRounds" type="number" value="2" min="1" max="10">
                 </div>
-                <div id="work">Round Time: 
-                    <input class="input-work" type="number">
+                <div id="work">Active: 
+                    <input class="inputWork" type="number" value="60" min="1" max="3600">
                 </div>
-                <div id="rest">Rest Time: 
-                    <input class="input-rest" type="number">
+                <div id="rest">Rest: 
+                    <input class="inputRest" type="number" value="5" min="0" max="600">
                 </div>
             </div>
         </section>

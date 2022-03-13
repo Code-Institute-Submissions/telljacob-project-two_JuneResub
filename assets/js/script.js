@@ -1,3 +1,4 @@
+/*
 document.addEventListener("DOMContentLoaded", function() {
     let buttons = document.getElementsByTagName("button")
 
@@ -5,32 +6,36 @@ document.addEventListener("DOMContentLoaded", function() {
         button.addEventListener("click", function() {
             if (this.getAttribute("input-rounds") === "start-workout") {
                 alert("You sent in a message");
+            } else {
+
             }
         })
     }
 })
-
+*/
 
 // Import input data
-let rounds = document.querySelector("input-rounds");
-let work = document.querySelector("input-work");
-let rest = document.querySelector("input-rest");
+let rounds = document.querySelector("inputRounds");
+let work = document.querySelector("inputWork");
+let rest = document.querySelector("inputRest");
 
 // Import start, stop and reset buttons
-var start = document.querySelector("start-workout");
-var stop = document.querySelector("stop-workout");
-var reset = document.querySelector("reset-workout");
+var start = document.querySelector("startWorkout");
+var stop = document.querySelector("stopWorkout");
+var reset = document.querySelector("resetWorkout");
 
 
-const countdownEl = document.getElementById("timerCountdown");
+work = inputWork;
 
-setInterval(newCountdown, 1000);
-
-// Timer countdown
-function newCountdown() {
-    
-    countdownEl.innerHTML = '${work}';
+setInterval( function(){
     work--;
-}
 
-// Initiate at Start press and import numbers
+    if( work >= 0 ){
+        id = document.getElementById("inputWork");
+        id.innerHTML = work;
+    }
+
+    if( work === 0 ){
+        id.innerHTML = "WORKOUT COMPLETE";
+    }
+}, 1000);
