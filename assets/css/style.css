@@ -14,6 +14,8 @@ body {
 
 h1 {
     color: #3a3a3a;
+    font-size: 300%;
+    padding-top: 5vh;
 }
 
 #section-outer {
@@ -31,11 +33,6 @@ h1 {
 #section-bottom {
     height: 50%;
     width: 100%;
-}
-
-.heading {
-    font-size: 300%;
-    padding-top: 5vh;
 }
 
 /* Top section */
@@ -56,7 +53,7 @@ h1 {
     margin-bottom: 50px;
 }
 
-#startWork, #stopWork, #resetWork {
+#startWork, #stopWork, #resetWork, #resetWork {
     width: 150px;
     height: 75px;
     font-size: 200%;
