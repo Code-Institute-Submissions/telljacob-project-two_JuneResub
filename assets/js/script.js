@@ -1,22 +1,28 @@
 isEnabled = true;
-document.getElementById("startWork").onclick = function() {
-    if (isEnabled === true) {
-        timerTwo();
-    } else {
+var m = document.getElementById("inputWork");
+var start = document.getElementById("startWork");
+var stop = document.getElementById("stopWork");
+var reset = document.getElementById("resetWork");
+
+start.addEventListener('click', function() {
+    if (isEnabled) {
         timer();
     }
-}
+    else {
+        isEnabled = true;
+    }
+});
 
-document.getElementById("stopWork").onclick = function() {
+stop.addEventListener('click', function() {
     isEnabled = false;
-}
+});
 
-document.getElementById("resetWork").onclick = function() {
+reset.addEventListener('click', function() {
     id = document.getElementById("timerCountdown");
     id.innerHTML = "00h:00m:00s";
     percentTimer = document.getElementById("percentCountdown");
     percentTimer.innerHTML = "";
-}
+})
 
 // Import value from input
 function timer() {
