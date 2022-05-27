@@ -19,8 +19,10 @@ The pages purpose was to be an actual tool a user like myself can use while stud
 I have tried the website on Chrome, Firefox and all possible screen sizes using Devtools.
 
 HTML - W3C Validator: No errors
+![HTML Validation](https://github.com/telljacob/project-two/blob/main/assets/images/lighthousescore.png?raw=true)
 
 CSS - Jigsaw Validator: No errors
+![CSS Validation](https://github.com/telljacob/project-two/blob/main/assets/images/cssvalidation.png?raw=true)
 
 **Lighthouse score**
 
@@ -28,10 +30,10 @@ CSS - Jigsaw Validator: No errors
 
 ## Challanges
 
-### 
+### Technical difficulties in development
+- Problems getting reset button to work and get rid off the href standard look. 
 
-## Technical difficulties in development
-- Problems getting reset button to work. 
+## 
 
 ## Deployment
 The site was deployed from Github pages:
@@ -39,4 +41,4 @@ The site was deployed from Github pages:
 - From there you scroll down until you see "Github Pages" and press the hyperlink saying "Check it out here!"
 - In the dropdown menu for "Branch:" choose main, in the next box choose "main" and save.
 
-The live site can be found [here](https://telljacob.github.io/project-one/index.html).
+The live site can be found [here](https://telljacob.github.io/project-two/index.html).
