@@ -2,7 +2,7 @@
 
 This page is meant to look as clear as possible with a minimalistic design. The purpose of this project was to create a tool for myself to help me stay on track with my studies and implement brakes without having to use a timer on my phone. The idea I wanted to build on was to have a single page where I have all the links I'd want. This is the first draft of that project and my first step to create my own "Study Hub". Later in development I'd want to add more functionality and links to make it even more helpful for myself.
 
-![Responsive Mockup](https://github.com/telljacob/project-one/blob/main/assets/images/amiresponsive.png?raw=true)
+![Responsive Mockup](https://github.com/telljacob/project-two/blob/main/assets/images/frontpage.png)
 
 ## Features
 
@@ -33,7 +33,8 @@ CSS - Jigsaw Validator: No errors
 ### Technical difficulties in development
 - Problems getting reset button to work and get rid off the href standard look. 
 
-## 
+## Credits
+- https://developer.mozilla.org/en-US/docs/Web/CSS/:out-of-range was used for out of range implementation
 
 ## Deployment
 The site was deployed from Github pages:
