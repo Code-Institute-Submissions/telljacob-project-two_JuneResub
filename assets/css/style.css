@@ -68,6 +68,7 @@ h1 {
     font-size: 200%;
     background-color:#000000e5;
     color: white;
+    text-decoration: none;
 }
 
 #startWork:hover, #stopWork:hover, #resetWork:hover {
@@ -152,6 +153,7 @@ h1 {
         height: 70px;
         font-size: 150%;
         text-align: center;
+        text-decoration: none;
     }
 
     #timerCountdown {

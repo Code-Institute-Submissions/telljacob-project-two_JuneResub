@@ -17,6 +17,7 @@ document.getElementById("resetWork").onclick = function() {
     percentTimer = document.getElementById("percentCountdown");
     percentTimer.innerHTML = "";
 }
+
 // Import value from input
 function timer() {
     const inputValue = document.getElementById("inputWork").value;
