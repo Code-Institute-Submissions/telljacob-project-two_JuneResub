@@ -1,6 +1,6 @@
 # Study Helper!
 
-This page is meant to look as plain and clear as possible.
+This page is meant to look as clear as possible with a minimalistic design. The purpose of this project was to create a tool for myself to help me stay on track with my studies and implement brakes without having to use a timer on my phone. The idea I wanted to build on was to have a single page where I have all the links I'd want. This is the first draft of that project and my first step to create my own "Study Hub". Later in development I'd want to add more functionality and links to make it even more helpful for myself.
 
 ![Responsive Mockup](https://github.com/telljacob/project-one/blob/main/assets/images/amiresponsive.png?raw=true)
 
@@ -8,7 +8,7 @@ This page is meant to look as plain and clear as possible.
 
 ### Navigation
 
-This is a one page site with as little to clutter the page I could.
+This is a one page site with as little to clutter the page as possible. Media links lower in the page.
 
 ### Media Links
 The pages purpose was to be an actual tool a user like myself can use while studying. Putting in links to motivational videos and music I listen to saves time and using this page I can pace my studying and keep to my brakes.
@@ -24,7 +24,7 @@ CSS - Jigsaw Validator: No errors
 
 **Lighthouse score**
 
-![Lighthouse Score](https://github.com/telljacob/project-one/blob/main/assets/images/lighthousescore.png?raw=true)
+![Lighthouse Score](https://github.com/telljacob/project-two/blob/main/assets/images/lighthousescore.png?raw=true)
 
 ## Challanges
 
