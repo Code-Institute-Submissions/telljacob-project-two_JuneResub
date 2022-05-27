@@ -1,12 +1,19 @@
 isEnabled = true;
+timerGoing = false;
 var m = document.getElementById("inputWork");
 var start = document.getElementById("startWork");
 var stop = document.getElementById("stopWork");
 var reset = document.getElementById("resetWork");
+var id = document.getElementById("timerCountdown");
 
 start.addEventListener('click', function() {
     if (isEnabled) {
-        timer();
+        if (timerGoing) {
+            isEnabled = true;
+        }
+        else {
+            timer()
+        }
     }
     else {
         isEnabled = true;
@@ -15,17 +22,19 @@ start.addEventListener('click', function() {
 
 stop.addEventListener('click', function() {
     isEnabled = false;
+
 });
 
 reset.addEventListener('click', function() {
-    id = document.getElementById("timerCountdown");
+    percentTimer = 0;
     id.innerHTML = "00h:00m:00s";
-    percentTimer = document.getElementById("percentCountdown");
     percentTimer.innerHTML = "";
+    timerGoing = false;
 })
 
 // Import value from input
 function timer() {
+    timerGoing = true;
     const inputValue = document.getElementById("inputWork").value;
     let counter = inputValue * 60;
     var startcounter = 0;
@@ -39,16 +48,12 @@ function timer() {
             let seconds = Math.floor((counter % 60));
         
             if( counter >= 0 ){
-                id = document.getElementById("timerCountdown");
                 id.innerHTML = hours + "h " + minutes + "m " + seconds + "s ";
             }
         
             if( counter === 1 ){
                 id.innerHTML = "WORK COMPLETE";
             }
-        
-            let percentTimer = document.getElementById("percentCountdown");
-            percentTimer.innerHTML = "Session " + Math.round((startcounter/counter)*100) + "% Completed";
         }
     }, 1000);
 }

@@ -91,12 +91,9 @@ h1 {
     color: white;
 }
 
+/* If session time is set to be too long */
 #inputWork:out-of-range {
     background-color: rgb(255, 0, 0);
-}
-
-#inputWork:out-of-range::after {
-    content: "You should not be studying for that long in one session!";
 }
 
 #awesomefonts {
