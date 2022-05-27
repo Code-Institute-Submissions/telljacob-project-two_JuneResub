@@ -34,18 +34,25 @@ function timer() {
         if (isEnabled) {
         counter--;
             startcounter++;
-            console.log(counter);
         
             let hours = Math.floor((counter % (60 * 60 * 24)) / (60 * 60));
             let minutes = Math.floor((counter % (60 * 60)) / (60));
             let seconds = Math.floor((counter % 60));
         
-            if( counter >= 0 ){
-                id.innerHTML = hours + "h " + minutes + "m " + seconds + "s ";
+            if(counter >= 3600) {
+                id.innerHTML = hours + "h " + minutes + "m " + seconds + "s";
             }
-        
-            if( counter === 1 ){
-                id.innerHTML = "WORK COMPLETE";
+
+            else if (counter >= 60) {
+                id.innerHTML = minutes + "m " + seconds + "s";
+            }
+
+            else {
+                id.innerHTML = seconds + "s";
+                if(counter === 0) {
+                    id.innerHTML = "WORK COMPLETE";
+                    timerGoing = false;
+                }
             }
         }
     }, 1000);
