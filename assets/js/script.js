@@ -72,8 +72,10 @@ function timer() {
                 id.innerHTML = seconds + "s";
                 if(counter === 0) {
                     audio.play();
+                    counter = inputValue * 60;
+                    startCounter = 0;
+                    isEnabled = false;
                     id.innerHTML = "WORK COMPLETE";
-                    timerGoing = false;
                 }
             }
         }
