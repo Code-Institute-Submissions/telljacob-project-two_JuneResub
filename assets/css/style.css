@@ -88,20 +88,27 @@ h1 {
 }
 
 #awesomefontsOne {
-    width: 50%;
+    width: 30%;
     float: left;
     text-align: center;
     font-size: 100%;
 }
 
 #awesomefontsTwo {
-    width: 50%;
+    width: 30%;
     float: right;
     text-align: center;
     font-size: 100%;
 }
 
-#awesomefontsOne a, #awesomefontsTwo a {
+#awesomefontsThree {
+    width: 30%;
+    display: inline;
+    text-align: center;
+    font-size: 100%;
+}
+
+#awesomefontsOne a, #awesomefontsTwo a, #awesomefontsThree a {
     color: #000000;
 }
 
@@ -130,7 +137,7 @@ h1 {
         margin: 0%;
     }
 
-    #awesomefontsTwo, #awesomefontsOne {
+    #awesomefontsTwo, #awesomefontsOne, #awesomefontsThree {
         margin-top: 30px;
     }
 }
