@@ -103,7 +103,7 @@ h1 {
 
 #awesomefontsThree {
     width: 30%;
-    display: inline;
+    display: inline-block;
     text-align: center;
     font-size: 100%;
 }
