@@ -13,7 +13,12 @@ start.addEventListener('click', function() {
         }
         else {
             inputValue = document.getElementById("inputWork").value;
-            timer();
+            if (inputValue > 120 ) {
+                alert("You shouldn't study for more than 2h at a time!");
+            }
+            else {
+                timer();
+            }
         }
     }
     else {
