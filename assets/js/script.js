@@ -30,10 +30,12 @@ start.addEventListener('click', function() {
     }
 });
 
+// Funtion to stop/pause the timer. Works as a toggle for the entire timer funtion through the isEnabled variable
 stop.addEventListener('click', function() {
     isEnabled = false;
 });
 
+// Reset function. Resets to the initial values put into the timer and sets the innerHTML values to 00h:00m:00s.
 reset.addEventListener('click', function() {
     counter = inputValue * 60;
     startCounter = 0;
