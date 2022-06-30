@@ -10,6 +10,9 @@ var stop = document.getElementById("stopWork");
 var reset = document.getElementById("resetWork")
 var id = document.getElementById("timerCountdown");
 
+const audio = new Audio();
+audio.src = "./assets/sounds/success.mp3";
+
 start.addEventListener('click', function() {
     if (isEnabled) {
         if (timerGoing) {
@@ -68,6 +71,7 @@ function timer() {
             else {
                 id.innerHTML = seconds + "s";
                 if(counter === 0) {
+                    audio.play();
                     id.innerHTML = "WORK COMPLETE";
                     timerGoing = false;
                 }
