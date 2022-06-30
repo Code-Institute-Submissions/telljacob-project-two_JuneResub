@@ -13,6 +13,9 @@ This is a one page site with as little to clutter the page as possible. Media li
 ### Media Links
 The pages purpose was to be an actual tool a user like myself can use while studying. Putting in links to motivational videos, GitHub and Music to save time and using this page I can pace my studying and keep to my brakes better.
 
+### Sound
+Sound effect to indicate when the study session is over.
+
 
 ## Validator Testing
 
@@ -39,6 +42,7 @@ I have tried the website on Chrome, Firefox and all possible screen sizes using 
 
 ## Credits
 - https://developer.mozilla.org/en-US/docs/Web/CSS/:out-of-range was used for out of range implementation
+- https://www.youtube.com/watch?v=0R6rZngcHGg&ab_channel=ProgrammingTT for help implement sound effect
 
 ## Deployment
 The site was deployed from Github pages:
