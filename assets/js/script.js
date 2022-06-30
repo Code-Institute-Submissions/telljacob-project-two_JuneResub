@@ -1,9 +1,13 @@
 isEnabled = true;
 timerGoing = false;
+var startCounter;
+var counter;
 
 var inputValue = document.getElementById("inputWork").value;
+var startValue = inputValue;
 var start = document.getElementById("startWork");
 var stop = document.getElementById("stopWork");
+var reset = document.getElementById("resetWork")
 var id = document.getElementById("timerCountdown");
 
 start.addEventListener('click', function() {
@@ -30,15 +34,22 @@ stop.addEventListener('click', function() {
     isEnabled = false;
 });
 
+reset.addEventListener('click', function() {
+    counter = inputValue * 60;
+    startCounter = 0;
+    isEnabled = false;
+    id.innerHTML = "00h:00m:00s";
+});
+
 // Function for the active timer. Controlled by the timerGoing boolean
 function timer() {
     timerGoing = true;
-    let counter = inputValue * 60;
-    var startcounter = 0;
+    counter = inputValue * 60;
+    startCounter = 0;
     setInterval( function(){
         if (isEnabled) {
         counter--;
-            startcounter++;
+            startCounter++;
         
             let hours = Math.floor((counter % (60 * 60 * 24)) / (60 * 60));
             let minutes = Math.floor((counter % (60 * 60)) / (60));
